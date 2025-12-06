@@ -14,18 +14,17 @@ const TermsConditions = () => {
   return (
     <section className="px-6 w-full bg-no-repeat bg-fixed z-0" style={{ backgroundImage: `url(${bglight})` }}>
 
-      <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]"/>
+      {/* <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]"/> */}
 
       <div className="relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-textBlue text-center  pt-24 pb-10">
           Terms & Conditions
         </h2>
 
-        <div className="flex w-full gap-6 pb-24">
-
+        <div className="flex flex-col md:flex-row justify-center w-full gap-6 pb-24">
           {/* Sidebar */}
           <aside
-            className="w-1/5 bg-[#c6d6fa20] border border-[#c6d6fa] overflow-y-auto max-h-[60vh]  rounded-xl sidebar-scroll">
+            className="hidden md:block w-full md:w-[30%] bg-[#c6d6fa20] border border-[#c6d6fa] overflow-y-auto md:max-h-[80vh] lg:max-h-[60vh]  rounded-xl sidebar-scroll">
             <ul className="py-6 space-y-2">
               {sections.map((item, index) => (
                 <li
@@ -48,29 +47,29 @@ const TermsConditions = () => {
 
           {/* Main content */}
           <section
-            className="relative w-4/5 bg-white border border-gray-200 
+            className="relative w-full md:w-[60%] bg-white border border-gray-200 
           rounded-2xl shadow-sm px-10 py-8 space-y-6 
           max-h-[calc(100vh-140px)] overflow-y-auto hide-scrollbar"
           >
             {/* Sticky header */}
             <div className="sticky top-0 bg-white pb-4 pt-2 z-10 border-b border-gray-200">
-              <h2 className="text-2xl font-bold text-textBlue">{active.title}</h2>
+              <h2 className="text-lg md:text-2xl font-bold text-textBlue">{active.title}</h2>
             </div>
 
             {/* Content Fade */}
-            <div className="animate-fadeIn prose max-w-[680px] min-h-[100px]">
+            <div className="animate-fadeIn prose max-w-[680px] min-h-[150px] max-h-[150px] overflow-y-auto">
               <p className="leading-relaxed text-[15px] whitespace-pre-line text-gray-700">
                 {active.content}
               </p>
             </div>
 
             {/* Footer Info */}
-            <p className="text-xs text-gray-400 text-right">
+            <p className="text-xs text-gray-400 text-right mb-4 mt-8">
               Last updated on {new Date().toLocaleDateString()}
             </p>
 
             {/* Prev / Next Buttons */}
-            <div className="flex items-center justify-between pt-4">
+            <div className="flex items-center justify-between">
               <button
                 onClick={goPrev}
                 disabled={activeIndex === 0}

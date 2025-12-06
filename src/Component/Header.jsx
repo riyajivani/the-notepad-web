@@ -36,7 +36,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        {scrolled && <nav className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-800">
+        {scrolled && <nav className="hidden lg:flex items-center gap-10 text-sm font-medium text-gray-800">
           <div onClick={() => handleNavClick("features", ROUTES.DEFAULT.path)} className="hover:text-hoverBlue transition cursor-pointer">Features</div>
           <Link to={ROUTES.PRICING.path} className="hover:text-hoverBlue transition cursor-pointer">Pricing</Link>
           <div onClick={() => handleNavClick("cta", ROUTES.DEFAULT.path)} className="hover:text-hoverBlue transition cursor-pointer">Download</div>
@@ -55,7 +55,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 px-6 pb-6 pt-3 flex flex-col  gap-4 text-sm font-medium">
+        <div className="lg:hidden bg-white border-t border-gray-200 px-6 pb-6 pt-3 flex flex-col  gap-4 text-sm font-medium">
           <div onClick={() => handleNavClick("features", ROUTES.DEFAULT.path)} className="text-center py-1 hover:text-hoverBlue">Features</div>
           <Link to={ROUTES.PRICING.path} onClick={()=>setMobileOpen(false)} className="text-center py-1 hover:text-hoverBlue">Pricing</Link>
           <div onClick={() => handleNavClick("features", ROUTES.DEFAULT.path)} className="text-center py-1 hover:text-hoverBlue">Download</div>

@@ -26,7 +26,7 @@ const FeatureSlider = () => {
           <section className="w-full bg-white sm:mt-28" id="features">
                <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl sm:text-4xl font-bold text-textBlue text-center mb-12">
-                         Powerful Features Built for You
+                         Powerful <span className="text-primaryRed"> Features </span> Built for You
                     </h2>
 
                     <div className="slider-container">
@@ -50,11 +50,11 @@ const FeatureSlider = () => {
                                              {/* TEXT – Rich content */}
                                              <div className="w-full md:w-1/2 p-10 min-h-[600px] sm:min-h-fit flex flex-col justify-start sm:justify-center bg-gradient-to-br from-[#c6d6fa66] via-white to-[#FFFF8866] rounded-2xl">
 
-                                                  <p className="text-sm uppercase tracking-wide text-primaryPurple font-semibold mb-3">
+                                                  <p className="text-xs md:text-sm uppercase tracking-wide text-primaryPurple font-semibold mb-3">
                                                        Featured Capability
                                                   </p>
 
-                                                  <h3 className="text-3xl font-extrabold text-gray-900 leading-tight mb-4">
+                                                  <h3 className="text-xl md:text-3xl font-extrabold text-gray-900 leading-tight mb-4">
                                                        {f.title}
                                                   </h3>
 

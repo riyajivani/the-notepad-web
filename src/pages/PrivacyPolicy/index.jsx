@@ -14,18 +14,18 @@ const PrivacyPolicy = () => {
   return (
     <section className="px-6 w-full bg-no-repeat bg-fixed z-0" style={{ backgroundImage: `url(${bglight})` }}>
 
-      <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" />
+      {/* <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px]" /> */}
 
       <div className="relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-textBlue text-center pt-24 pb-10">
           Privacy Policy
         </h2>
 
-        <div className="flex w-full gap-6 pb-24">
+        <div className="flex flex-col md:flex-row justify-center w-full gap-6 pb-24">
 
           {/* Sidebar */}
           <aside
-            className="w-1/5 bg-[#c6d6fa20] border border-[#c6d6fa] overflow-y-auto max-h-[60vh]  rounded-xl sidebar-scroll">
+            className="hidden md:block w-full md:w-[30%] bg-[#c6d6fa20] border border-[#c6d6fa] overflow-y-auto md:max-h-[80vh] lg:max-h-[60vh]  rounded-xl sidebar-scroll">
             <ul className="py-6 space-y-2">
               {privacyPolicy.map((item, index) => (
                 <li
@@ -48,15 +48,14 @@ const PrivacyPolicy = () => {
 
           {/* Main content */}
           <section
-            className="relative w-4/5 bg-white border border-gray-200 
-          rounded-2xl shadow-sm px-10 pt-4   max-h-[calc(100vh-140px)] overflow-y-auto hide-scrollbar">
+            className="relative w-full md:w-[60%] bg-white border border-gray-200 rounded-2xl shadow-sm px-10 p-4">
             {/* Sticky header */}
             <div className="sticky top-0 bg-white py-3 mb-2 z-10 border-b border-gray-200">
-              <h2 className="text-2xl font-bold text-textBlue">{active.title}</h2>
+              <h2 className="text-lg md:text-2xl font-bold text-textBlue">{active.title}</h2>
             </div>
 
             {/* Content Fade */}
-            <div className="animate-fadeIn prose overflow-y-auto max-h-[230px]  min-h-[230px]">
+            <div className="animate-fadeIn overflow-y-auto max-h-[300px] min-h-[300px] md:max-h-[200px] md:min-h-[200px]">
               <p className="leading-relaxed text-[15px] whitespace-pre-line text-gray-700">
                 {active.content}
               </p>
@@ -82,12 +81,12 @@ const PrivacyPolicy = () => {
             </div>
 
             {/* Footer Info */}
-            <p className="text-xs text-gray-400 text-right mb-2">
+            <p className="text-xs text-gray-400 text-right mb-4 mt-8">
               Last updated on {new Date().toLocaleDateString()}
             </p>
 
             {/* Prev / Next Buttons */}
-            <div className="flex items-end justify-between">
+            <div className="flex items-center justify-between">
               <button
                 onClick={goPrev}
                 disabled={activeIndex === 0}

@@ -430,7 +430,7 @@ export const plans = [
 ];
 
 export const faqs = [
-    { q: "How does The Notepad work?", a: "The Notepad allows you to create notes offline and sync them across devices seamlessly." },
+    { q: "How does The Notepad work????????????????????????????????????????????????????????????????????", a: "The Notepad allows you to create notes offline and sync them across devices seamlessly." },
     { q: "Is the app really free?", a: "Yes. All core features are free — no paywalls or hidden restrictions." },
     { q: "Can I export my notes?", a: "You can export to PDF, Markdown, or plain text anytime." },
     { q: "Does it work without Internet?", a: "Absolutely. Everything works offline and syncs when reconnected." },

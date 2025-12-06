@@ -7,7 +7,7 @@ const HighlightCTA = () => {
                <div className="max-w-7xl mx-auto px-6">
 
                     <h2 className="text-3xl md:text-4xl font-bold text-textBlue text-center mb-3">
-                         Elevate Your Note-Taking
+                         Elevate Your <span className="text-primaryRed">Note-Taking</span>
                     </h2>
 
                     <p className="text-gray-600 text-center max-w-2xl mx-auto mb-16">
@@ -17,16 +17,16 @@ const HighlightCTA = () => {
                     <div className="relative w-full rounded-3xl bg-gradient-to-br from-[#ffff8820] to-[#F5E8FF] shadow-md p-10 md:p-16 flex flex-col md:flex-row items-center gap-12">
 
                          {/* LEFT CONTENT */}
-                         <div className="flex-1">
+                         <div className="flex-1 flex flex-col items-center md:block">
                               <span className="inline-block bg-primaryPurple/15 text-primaryPurple px-2 py-1 rounded-full text-sm font-semibold mb-4">
                                    Capture More
                               </span>
 
-                              <h2 className="text-3xl md:text-4xl md:max-w-[50%] font-extrabold text-gray-900 mb-4">
+                              <h2 className="text-center md:text-left text-3xl md:text-4xl md:max-w-[50%] font-extrabold text-gray-900 mb-4">
                                    Your ideas deserve a better home.
                               </h2>
 
-                              <p className="text-gray-700 text-lg leading-relaxed mb-8 md:max-w-[45%]">
+                              <p className="text-gray-700 text-lg text-center md:text-left leading-relaxed mb-8 md:max-w-[45%]">
                                    Whether it's tasks, journals, creative sparks, or quick reminders —
                                    keep everything neatly organized and instantly accessible inside one smart notepad.
                               </p>
