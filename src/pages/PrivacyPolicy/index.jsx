@@ -59,25 +59,6 @@ const PrivacyPolicy = () => {
               <p className="leading-relaxed text-[15px] whitespace-pre-line text-gray-700">
                 {active.content}
               </p>
-
-              {active.points && (
-                <ul className="list-disc pl-6 space-y-1">
-                  {active.points.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
-              )}
-
-              {active.subSections && active.subSections.map((ss, i) => (
-                <div key={i} className="mt-6">
-                  <h4 className="font-semibold text-[#0E265A] mb-2">{ss.subTitle}</h4>
-                  <ul className="list-disc pl-6 space-y-1">
-                    {ss.points?.map((p, j) => (
-                      <li key={j}>{p}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
             </div>
 
             {/* Footer Info */}
