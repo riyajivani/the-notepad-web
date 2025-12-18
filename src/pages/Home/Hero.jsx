@@ -58,7 +58,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import background from "../../assets/phone.png";
+import background from "../../assets/homepage.png";
 import smallBackground from "../../assets/smphone.png";
 import { useScrollNavigation } from "../../utils/scrollUtils";
 import { ROUTES } from "../../constants/routespath";

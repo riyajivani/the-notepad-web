@@ -12,30 +12,30 @@ export const features = [
     img: "/images/feature1.png",
   },
 
-  {
-    title: "Calendar View",
-    desc: "See your notes, tasks, and reminders in a structured weekly, or monthly timeline.",
-    bullets: [
-      "Day, week, and month layouts",
-      "Map your notes to your special days",
-      "Integrated reminders and deadlines",
-      "Smooth navigation across months"
-    ],
-    img: "/images/feature2.png",
-  },
+  // {
+  //   title: "Calendar View",
+  //   desc: "See your notes, tasks, and reminders in a structured weekly, or monthly timeline.",
+  //   bullets: [
+  //     "Day, week, and month layouts",
+  //     "Map your notes to your special days",
+  //     "Integrated reminders and deadlines",
+  //     "Smooth navigation across months"
+  //   ],
+  //   img: "/images/feature2.png",
+  // },
 
-  {
-    title: "Smart Reminders",
-    desc: "Never miss a task — set intelligent reminders that notify you at the right moment.",
-    bullets: [
-      "One-tap quick reminders",
-      "Recurring reminders (daily/weekly/monthly/yearly)",
-      "Calendar auto-syncing",
-      "Silent mode friendly notifications",
-      "can have multiple reminders for one note"
-    ],
-    img: "/images/feature3.png",
-  },
+  // {
+  //   title: "Smart Reminders",
+  //   desc: "Never miss a task — set intelligent reminders that notify you at the right moment.",
+  //   bullets: [
+  //     "One-tap quick reminders",
+  //     "Recurring reminders (daily/weekly/monthly/yearly)",
+  //     "Calendar auto-syncing",
+  //     "Silent mode friendly notifications",
+  //     "can have multiple reminders for one note"
+  //   ],
+  //   img: "/images/feature3.png",
+  // },
 
   {
     title: "Note Management",
@@ -45,24 +45,24 @@ export const features = [
       "Pin important notes",
       "Share notes securely",
       "Archive and restore anytime",
-      "Lock notes with passcode",
+      "Lock notes, categories and app with passcode",
       "Export & import notes safely"
     ],
     img: "/images/feature4.png",
   },
 
-  {
-    title: "Home Widgets",
-    desc: "Access your notes, tasks, and reminders directly from your home screen for instant productivity.",
-    bullets: [
-      "Multiple widget sizes",
-      "Quick-add note widget",
-      "Upcoming reminders preview",
-      "calender widget",
-      "Beautiful soft-color UI"
-    ],
-    img: "/images/feature5.png",
-  },
+  // {
+  //   title: "Home Widgets",
+  //   desc: "Access your notes, tasks, and reminders directly from your home screen for instant productivity.",
+  //   bullets: [
+  //     "Multiple widget sizes",
+  //     "Quick-add note widget",
+  //     "Upcoming reminders preview",
+  //     "calender widget",
+  //     "Beautiful soft-color UI"
+  //   ],
+  //   img: "/images/feature5.png",
+  // },
 
   {
     title: "Offline Mode",
@@ -75,17 +75,17 @@ export const features = [
     ],
     img: "/images/feature6.png",
   },
-
-  {
-    title: "7-Day Auto Sync",
-    desc: "Your data stays fresh across all devices with automatic syncing for the last 7 days of activity.",
-    bullets: [
-      "Syncs last 7 days automatically",
-      "Manual sync option available",
-      "Optimized for low data usage"
-    ],
-    img: "/images/feature7.png",
-  },
+ {
+  title: "Cloud Backup",
+  desc: "You decide when your data is backed up—secure, intentional, and always in your control.",
+  bullets: [
+    "Your data will never be lost",
+    "Easy restore when needed",
+    "Designed for privacy and efficiency",
+    "Safe, secure, and user-controlled",
+  ],
+  img: "/images/feature7.png",
+}
 ];
 
 export const sections = [
