@@ -59,6 +59,7 @@ const Footer = () => {
             <ul className="space-y-2 text-black/70 font-medium">
               <Link to={ROUTES.POLICY.path}> <li className="hover:text-black cursor-pointer">Privacy Policy</li></Link>
               <Link to={ROUTES.TERMS.path}><li className="hover:text-black cursor-pointer">Terms and Conditions</li></Link>
+              <Link to={ROUTES.DELETE_ACC.path}><li className="hover:text-black cursor-pointer">Delete Account/data</li></Link>
             </ul>
           </div>
 

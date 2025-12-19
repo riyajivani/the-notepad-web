@@ -5,6 +5,7 @@ const Home = lazy(() => import("../pages/Home"));
 const PrivacyPolicy = lazy(() => import("../pages/PrivacyPolicy"));
 const TermsConditions = lazy(() => import("../pages/TermsConditions"));
 const Pricing = lazy(() => import("../pages/Pricing"));
+const Deleteacc = lazy(()=> import("../pages/deleteAcc"))
 
 export const ROUTES = {
   DEFAULT: {
@@ -34,6 +35,13 @@ export const ROUTES = {
     showHeader: true,
     showFooter:true,
     element: <Pricing />,
+  },
+  DELETE_ACC: {
+    path: "/acc-deletion",
+    routeType: "public",
+    showHeader: true,
+    // showFooter:true,
+    element: <Deleteacc />,
   },
   NOT_FOUND: {
     path: "*",
