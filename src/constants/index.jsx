@@ -9,7 +9,7 @@ export const features = [
       "Supports embedding links and images",
       "Beautiful collection of rich backgrounds, emojis, and stickers"
     ],
-    img: "/images/feature1.png",
+    img: "texteditor",
   },
 
   // {
@@ -48,7 +48,7 @@ export const features = [
       "Lock notes, categories and app with passcode",
       "Export & import notes safely"
     ],
-    img: "/images/feature4.png",
+    img: "managenotes",
   },
 
   // {
@@ -73,7 +73,7 @@ export const features = [
       "Fast local caching",
       "Seamless cloud sync"
     ],
-    img: "/images/feature6.png",
+    img: "offlineapp",
   },
  {
   title: "Cloud Backup",
@@ -84,7 +84,7 @@ export const features = [
     "Designed for privacy and efficiency",
     "Safe, secure, and user-controlled",
   ],
-  img: "/images/feature7.png",
+  img: "cloudsync",
 }
 ];
 

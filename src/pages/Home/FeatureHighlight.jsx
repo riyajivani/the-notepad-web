@@ -4,7 +4,10 @@ import { features } from "../../constants";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import dummyImg from "../../assets/buyphone.png"
+import cloudsync from "../../assets/cloudsync.png"
+import managenotes from "../../assets/managenotes.png"
+import offlineapp from "../../assets/offlineapp.png"
+import texteditor from "../../assets/texteditor.png"
 
 const FeatureSlider = () => {
      const isMobile = window.innerWidth < 1000;
@@ -22,6 +25,13 @@ const FeatureSlider = () => {
           pauseOnHover: true,
           arrows: !isMobile
      };
+
+     const imageMap = {
+          "texteditor": texteditor,
+          "managenotes": managenotes,
+          "offlineapp": offlineapp,
+          "cloudsync": cloudsync
+     }
      return (
           <section className="w-full bg-white sm:mt-28" id="features">
                <div className="max-w-6xl mx-auto px-6">
@@ -37,18 +47,18 @@ const FeatureSlider = () => {
                                         key={index}
                                         className="min-w-full flex items-center justify-center p-1 snap-center bg-white rounded-3xl overflow-hidden h-fit"
                                    >
-                                        <div className="flex flex-col md:flex-row">
+                                        <div className="flex flex-col md:flex-row bg-gradient-to-br from-[#c6d6fa66] via-white to-[#FFFF8866]">
                                              {/* IMAGE – Balanced ratio */}
-                                             <div className="w-full md:w-[50%] md:ml-4 flex justify-center items-center">
+                                             <div className="w-full md:w-[60%] md:ml-4 flex justify-center items-center ">
                                                   <img
-                                                       src={dummyImg}
+                                                       src={imageMap[f.img]}
                                                        alt={f.title}
-                                                       className="w-full sm:w-[400px] h-full md:w-[350px] md:h-[380px] object-cover"
+                                                       className="w-full sm:w-[400px] h-full md:w-[450px] md:h-[480px] object-fit"
                                                   />
                                              </div>
 
                                              {/* TEXT – Rich content */}
-                                             <div className="w-full md:w-1/2 p-10 min-h-[600px] sm:min-h-fit flex flex-col justify-start sm:justify-center bg-gradient-to-br from-[#c6d6fa66] via-white to-[#FFFF8866] rounded-2xl">
+                                             <div className="w-full md:w-1/2 p-10 min-h-[600px] sm:min-h-fit flex flex-col justify-start sm:justify-center rounded-2xl">
 
                                                   <p className="text-xs md:text-sm uppercase tracking-wide text-primaryPurple font-semibold mb-3">
                                                        Featured Capability
